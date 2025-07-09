@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    border: solid black;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 800px;
+    min-width: 500px;
+}
+
+#box1{
+  grid-column: 1 / 2;
+  grid-row: 1/2;  
+  padding: 5px;
+  min-width: 300px;
+  max-width: 500px;
+}
+#box1 > .quote{
+    border: solid black;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding: 25px;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+#box1 > .author, #box2 > .author{
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.circle{
+    border: solid rgba(208, 195, 195, 0.292);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.circle > img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.name {
+    font-size: 20px;
+}
+.name >span {
+    font-size: 15px;
+}
+
+#box2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    border: solid black;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+    min-width: 300px;
+    max-width: 500px;
+}
+#box2 > .quote{
+    font-size: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
